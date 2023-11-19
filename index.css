@@ -1,0 +1,22 @@
+body {
+  background-color: aqua;
+}
+.box {
+  height: 200px;
+  width: 200px;
+  background-color: pink;
+  border-radius: 100px;
+  margin: auto;
+  position: relative;
+}
+.img {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  margin: auto;
+  border-radius: 100px;
+  /* adding animation */
+
+  a
+}
+
