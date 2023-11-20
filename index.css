@@ -1,5 +1,7 @@
 body {
   background-color: aqua;
+  display: flex;
+  /* justify-content: center; */
 }
 /* .box {
   height: 200px;
@@ -18,13 +20,25 @@ body {
 
   /* adding animation */
 
-  animation-name: ball;
+  animation: ball;
   animation-duration: 5s;
   animation-delay: 1s;
-  animation-direction: reverse;
+  animation-direction: alternate;
   animation-iteration-count: infinite;
+  /* animation-timing-function: cubic-bezier(0.4, 0.006, 1, 0.6); */
 }
 @keyframes ball {
+  from {
+    height: 200px;
+    width: 200px;
+  }
+  to {
+    height: 0px;
+    width: 0px;
+  }
+}
+
+/* @keyframes ball {
   0% {
     top: 0px;
     left: 0px;
@@ -41,4 +55,4 @@ body {
     bottom: 600px;
     right: 100px;
   }
-}
+} */
