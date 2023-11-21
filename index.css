@@ -3,6 +3,7 @@ body {
   display: flex;
 }
 
+/* HEADING1 */
 .h1 {
   position: absolute;
   color: #fff;
@@ -12,8 +13,9 @@ body {
   font-style: oblique;
   animation: text 1s ease-in-out infinite alternate;
   animation-duration: 2s;
-  /* animation-direction: alternate;
-  animation-iteration-count:calc(6); */
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(1, 0, 0, 0);
 }
 
 @keyframes text {
@@ -22,11 +24,39 @@ body {
       0 0 40px #c6c90e, 0 0 50px #abad13, 0 0 60px #e6db7f, 0 0 70px #e60073;
   }
   to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #f0cd31, 0 0 40px #d0dd19,
-      0 0 50px #eefc29, 0 0 60px #eee563, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #bb9d19,
+      0 0 40px #c6c90e, 0 0 50px #abad13, 0 0 60px #e6db7f, 0 0 70px #e60073;
   }
 }
+/* HEADING 2 */
+.h2 {
+  position: absolute;
+  color: #fff;
+  margin: calc(550px);
+  font-size: 20px;
+  font-style: oblique;
+  animation: text1;
+  animation-direction: alternate;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  /* animation-timing-function: ; */
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(1, 0, 0, 0);
+}
 
+@keyframes text1 {
+  from {
+    opacity: 0;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #bb9d19,
+      0 0 40px #c6c90e, 0 0 50px #abad13, 0 0 60px #e6db7f, 0 0 70px #e60073;
+  }
+  to {
+    opacity: 5;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #bb9d19,
+      0 0 40px #c6c90e, 0 0 50px #abad13, 0 0 60px #e6db7f, 0 0 70px #e60073;
+  }
+}
+/* SETTINGS BALLS */
 .box {
   /* background-color: pink; */
   position: absolute;
@@ -38,7 +68,7 @@ body {
   animation: boxx;
   animation-duration: 2s;
   animation-direction: alternate;
-  animation-iteration-count: calc(6);
+  animation-iteration-count: infinite;
   /* animation-timing-function: ease-in; */
   /* animation-timing-function: cubic-bezier(0.5, 0.005, 1, 0.5); */
 }
@@ -59,7 +89,7 @@ body {
   }
 }
 
-/* pikachu */
+/* SETTING PIKACHU */
 .box1 {
   position: center;
   /* background-color: aqua; */
@@ -72,7 +102,7 @@ body {
   animation-duration: 2s;
   animation-delay: 0.1s;
   /* animation-timing-function: ; */
-  animation-iteration-count: calc(6);
+  animation-iteration-count: infinite;
   animation-timing-function: cubic-bezier(1, 0, 0, 0);
 }
 
