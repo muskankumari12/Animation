@@ -2,6 +2,31 @@ body {
   background-color: black;
   display: flex;
 }
+
+.h1 {
+  position: absolute;
+  color: #fff;
+  margin-left: 500px;
+  text-align: center;
+  font-size: 50px;
+  font-style: oblique;
+  animation: text 1s ease-in-out infinite alternate;
+  animation-duration: 2s;
+  /* animation-direction: alternate;
+  animation-iteration-count:calc(6); */
+}
+
+@keyframes text {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #bb9d19,
+      0 0 40px #c6c90e, 0 0 50px #abad13, 0 0 60px #e6db7f, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #f0cd31, 0 0 40px #d0dd19,
+      0 0 50px #eefc29, 0 0 60px #eee563, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
 .box {
   /* background-color: pink; */
   position: absolute;
@@ -13,7 +38,7 @@ body {
   animation: boxx;
   animation-duration: 2s;
   animation-direction: alternate;
-  animation-iteration-count: infinite;
+  animation-iteration-count: calc(6);
   /* animation-timing-function: ease-in; */
   /* animation-timing-function: cubic-bezier(0.5, 0.005, 1, 0.5); */
 }
@@ -35,33 +60,32 @@ body {
 }
 
 /* pikachu */
-.img2 {
-  /* position: ; */
-  height: 300px;
-  width: 400px;
+.box1 {
+  position: center;
+  /* background-color: aqua; */
+  height: 200px;
+  width: 200px;
   margin: 450px auto;
-  border-radius: 400px;
+  /* border-radius: 100px; */
   animation: pikachu;
-  /* animation-duration: ; */
-  /* animation-timing-function: ease-in-out; */
-  /* animation-iteration-count: infinite; */
-  /* animation-timing-function: cubic-bezier(0.5, 0.005, 1, 0.5); */
+  animation-direction: alternate;
+  animation-duration: 2s;
+  animation-delay: 0.1s;
+  /* animation-timing-function: ; */
+  animation-iteration-count: calc(6);
+  animation-timing-function: cubic-bezier(1, 0, 0, 0);
 }
 
 @keyframes pikachu {
-  0% {
-    opacity: 0;
+  from {
+    /* background-image: url("black.jpg"); */
+    /* background-repeat: no-repeat; */
+    /* background-size: 200px; */
   }
-  17% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0;
-  }
-  92% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
+
+  to {
+    background: url("pikachu.png");
+    background-size: 250px;
+    background-repeat: no-repeat;
   }
 }
