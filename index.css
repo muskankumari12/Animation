@@ -1,7 +1,6 @@
 body {
-  /* background-color: black; */
+  background-color: black;
   display: flex;
-  /* background-image: ("pikachu.png"); */
 }
 .box {
   /* background-color: pink; */
@@ -12,16 +11,18 @@ body {
   border-radius: 100px;
   /* adding animation */
   animation: boxx;
-  animation-duration: 10s;
+  animation-duration: 2s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
-  animation-timing-function: cubic-bezier(0.5, 0.005, 1, 0.5);
+  /* animation-timing-function: ease-in; */
+  /* animation-timing-function: cubic-bezier(0.5, 0.005, 1, 0.5); */
 }
 @keyframes boxx {
   from {
-    transform: translate3d(100px, 100px, 0);
+    transform: translate3d(0px, 0px, 0);
     background-image: url("closeball.jpeg");
-    position: absolute;
+    background-size: 200px;
+    /* position: absolute; */
 
     /* opaciy: 0.3; */
   }
@@ -29,61 +30,9 @@ body {
     transform: translate3d(200px, 305px, 0);
     background: url("pokiball.jpg");
     background-size: 200px;
-    position: absolute;
+    /* position: relative; */
   }
 }
-
-/* .img,
-.img1 {
-  position: absolute;
-  height: 200px;
-  width: 200px;
-  margin: auto;
-  border-radius: 100px; */
-/* adding animation */
-/* animation: ball;
-  animation-duration: 0.9s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-timing-function: cubic-bezier(0.5, 0.005, 1, 0.5);
-}
-/* adding 3d bouncing effects */
-/* @keyframes ball {
-  from {
-    transform: translate3d(100px, 100px, 0);
-    background: url("closeball.jpeg");
-    opacity: 0.3;
-  }
-  to {
-    transform: translate3d(200px, 305px, 0);
-  }
-} */
-
-/* openball */
-/* .img1 {
-  position: absolute;
-  height: 200px;
-  width: 200px;
-  margin: auto;
-  border-radius: 100px;
-  /* adding animation */
-/* animation: ball;
-  animation-duration: 0.9s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-timing-function: cubic-bezier(0.5, 0.005, 1, 0.5);
-} */
-
-/* @keyframes ball {
-  0% {
-    background-image: url("closeball.jpeg");
-    animation-duration: 1s;
-  }
-  100% {
-    background-image: url("pokiball,jpg");
-    animation-timing-function: cubic-bezier(0.5, 0.005, 1, 0.5);
-  }
-} */
 
 /* pikachu */
 .img2 {
