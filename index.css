@@ -1,67 +1,114 @@
 body {
-  background-color: aqua;
+  /* background-color: black; */
   display: flex;
-  /* justify-content: center; */
+  /* background-image: ("pikachu.png"); */
 }
-/* .box {
-  height: 200px;
-  width: 200px;
+.box {
   background-color: pink;
-  border-radius: 100px;
-  margin: auto;
-  position: relative;
-} */
-.img {
   position: absolute;
   height: 200px;
   width: 200px;
   margin: auto;
   border-radius: 100px;
-
   /* adding animation */
-
-  animation: ball;
+  animation: boxx;
   animation-duration: 0.9s;
-  /* animation-delay: 1s; */
   animation-direction: alternate;
   animation-iteration-count: infinite;
   animation-timing-function: cubic-bezier(0.5, 0.005, 1, 0.5);
 }
-/* @keyframes ball {
+@keyframes boxx {
   from {
-    height: 200px;
-    width: 200px;
+    transform: translate3d(100px, 100px, 0);
+    background: url("closeball.jpeg");
+    /* opacity: 0.3; */
   }
   to {
-    height: 0px;
-    width: 0px;
-  }
-} */
-
-@keyframes ball {
-  from {
-    transform: translate3d(0, 0, 0);
-  }
-  to {
-    transform: translate3d(100px, 205px, 0);
+    transform: translate3d(200px, 305px, 0);
+    background: url("pokiball.jpeg");
   }
 }
 
+/* .img,
+.img1 {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  margin: auto;
+  border-radius: 100px; */
+/* adding animation */
+/* animation: ball;
+  animation-duration: 0.9s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.5, 0.005, 1, 0.5);
+}
+/* adding 3d bouncing effects */
 /* @keyframes ball {
-  0% {
-    top: 0px;
-    left: 0px;
+  from {
+    transform: translate3d(100px, 100px, 0);
+    background: url("closeball.jpeg");
+    opacity: 0.3;
   }
-  25% {
-    bottom: 300px;
-    right: 300px;
-  }
-  75% {
-    top: 0px;
-    right: 600px;
-  }
-  100% {
-    bottom: 600px;
-    right: 100px;
+  to {
+    transform: translate3d(200px, 305px, 0);
   }
 } */
+
+/* openball */
+/* .img1 {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  margin: auto;
+  border-radius: 100px;
+  /* adding animation */
+/* animation: ball;
+  animation-duration: 0.9s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.5, 0.005, 1, 0.5);
+} */
+
+/* @keyframes ball {
+  0% {
+    background-image: url("closeball.jpeg");
+    animation-duration: 1s;
+  }
+  100% {
+    background-image: url("pokiball,jpg");
+    animation-timing-function: cubic-bezier(0.5, 0.005, 1, 0.5);
+  }
+} */
+
+/* pikachu */
+.img2 {
+  /* position: ; */
+  height: 300px;
+  width: 400px;
+  margin: 450px auto;
+  border-radius: 400px;
+  animation: pikachu;
+  /* animation-duration: ; */
+  /* animation-timing-function: ease-in-out; */
+  /* animation-iteration-count: infinite; */
+  /* animation-timing-function: cubic-bezier(0.5, 0.005, 1, 0.5); */
+}
+
+@keyframes pikachu {
+  0% {
+    opacity: 0;
+  }
+  17% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  92% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
